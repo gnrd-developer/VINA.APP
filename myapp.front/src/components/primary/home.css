@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    margin: 0;
+    background: linear-gradient(to right, rgba(15, 147, 255, 0.459), rgb(201, 98, 226));
+    background-image: url('../../estaticos/ejemplo.png');    
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

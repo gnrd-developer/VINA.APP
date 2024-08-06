@@ -1,0 +1,38 @@
+
+services:
+  app:
+    container_name: back_gnrd
+    image: gnrd_image
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - DATABASE_URL=jdbc:mysql://mysql-db-gnrd:3306/vina01
+      - DATABASE_USERNAME=root
+      - DATABASE_PASSWORD=c3p0
+    networks:
+      - spring-network
+    depends_on:
+      - db
+
+  db:
+    container_name: "db_gnrd"
+    image: "mysql:8.0.33"
+    ports:
+      - "9090:3306"
+    networks:
+      - spring-network
+    volumes:
+#      - ./mysql:/var/lib/mysql
+      - db-data:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: "vina01"
+      MYSQL_USER: "gnrd"
+      MYSQL_PASSWORD: "c3po"
+      MYSQL_ROOT_PASSWORD: "c3po"
+
+networks:
+  spring-network:
+volumes:
+  db-data:
+
