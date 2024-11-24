@@ -1,0 +1,31 @@
+{
+  "name": "front.gouindustries",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mui/material": "^6.1.1",
+    "axios": "^1.7.4",
+    "bootstrap": "^5.3.3",
+    "front.gouindustries": "file:",
+    "js-cookie": "^3.0.5",
+    "next": "^14.2.14",
+    "react": "^18",
+    "react-dom": "^18",
+    "swiper": "^11.1.9"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5"
+  }
+}
